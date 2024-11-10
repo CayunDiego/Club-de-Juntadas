@@ -1,0 +1,64 @@
+/* src/components/Layout.css */
+body {
+    margin: 0;
+  }
+  
+  .layout {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--color-primary);
+    padding: 1rem;
+  }
+
+  .logo-container {
+    background-color: white;
+    width: 100%;
+    padding: 6px;
+    box-sizing: border-box;
+  }
+  
+  .logo {
+    height: 50px;
+  }
+  
+  .navbar {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .navbar a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  footer {
+    background-color: var(--color-secondary);
+    padding: 1rem;
+    text-align: center;
+    margin-top: auto;
+  }
+  
+
+  @media (max-width: 600px) {
+    .header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .navbar {
+      gap: 1rem;
+    }
+  
+    .navbar a {
+      border-radius: 6px;
+      padding: 0.5rem;
+      background-color: rgba(var(--color-septenary-rgb), 0.5);
+    }
+  }
