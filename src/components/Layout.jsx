@@ -45,7 +45,7 @@ const Layout = ({ children }) => {
       </header>
       <main className='main-container'>{children}</main>
       <footer>
-        <p>Creado con amor ❤️</p>
+        <p>Creado con amor ❤️ K&D</p>
       </footer>
     </div>
   );
