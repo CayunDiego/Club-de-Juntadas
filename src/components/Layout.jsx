@@ -29,6 +29,18 @@ const Layout = ({ children }) => {
           >
             Diseños
           </Link>
+          <Link 
+            to="/Club-de-Juntadas/tips" 
+            className={location.pathname === '/Club-de-Juntadas/tips' ? 'active' : ''}
+          >
+            Tips
+          </Link>
+          <Link 
+            to="/Club-de-Juntadas/colors" 
+            className={location.pathname === '/Club-de-Juntadas/colors' ? 'active' : ''}
+          >
+            Colores
+          </Link>
         </nav>
       </header>
       <main className='main-container'>{children}</main>

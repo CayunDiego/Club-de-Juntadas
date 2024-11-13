@@ -1,0 +1,34 @@
+.colors {
+  padding: 1rem;
+  color: var(--color-tertiary);
+  h1 {
+      font-size: 22px;
+  }
+
+  .tabla-colors {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .container {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .colors-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 40px;
+  }
+
+  .circle {
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid gray;
+  }
+}
