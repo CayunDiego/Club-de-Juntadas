@@ -1,10 +1,20 @@
 .tips {
+  padding: 1rem;
+  color: var(--color-tertiary);
+  h1 {
+    font-size: 22px;
+  }
+  .img-construccion {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .tips {
     padding: 1rem;
     color: var(--color-tertiary);
     h1 {
-      font-size: 22px;
-    }
-    .img-construccion {
-      width: 100%;
+      font-size: 5.7vw;
     }
   }
+}

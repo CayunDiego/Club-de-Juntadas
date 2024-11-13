@@ -1,7 +1,17 @@
 .designs {
+  padding: 1rem;
+  color: var(--color-tertiary);
+  h1 {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 600px) {
+  .designs {
     padding: 1rem;
     color: var(--color-tertiary);
     h1 {
-      font-size: 22px;
+      font-size: 5.7vw;
     }
   }
+}

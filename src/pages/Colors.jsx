@@ -153,32 +153,30 @@ const Colors = () => {
   return (
     <div className='colors'>
       <h1>Combina colores y crea nuevos!</h1>
+      <p>Los números indican la proporción de colores</p>
       <div className='container'>
         {colors.map(color => {
           const hasColor3 = Boolean(color.color3);
-          const circleStyle = {
-            width: hasColor3 ? '70px' : '100px',
-            height: hasColor3 ? '70px' : '100px',
-          };
+          const circleClass = hasColor3 ? 'circle-large-small' : 'circle-large';
 
           return (
             <div className='colors-container' key={color.color1 + color.color2 + (color.color3 || '')}>
-              <div className='circle' style={{ ...circleStyle, backgroundColor: color.color1 }}>
+              <div className={`circle ${circleClass}`} style={{ backgroundColor: color.color1 }}>
                 {color.color1Prop}
               </div>
               +
-              <div className='circle' style={{ ...circleStyle, backgroundColor: color.color2 }}>
+              <div className={`circle ${circleClass}`} style={{ backgroundColor: color.color2 }}>
                 {color.color2Prop}
               </div>
               {hasColor3 && (
                 <>
-                  + <div className='circle' style={{ ...circleStyle, backgroundColor: color.color3 }}>
+                  + <div className={`circle ${circleClass}`} style={{ backgroundColor: color.color3 }}>
                     {color.color3Prop}
                   </div>
                 </>
               )}
               =
-              <div className='circle' style={{ ...circleStyle, backgroundColor: color.result }}></div>
+              <div className={`circle ${circleClass}`} style={{ backgroundColor: color.result }}></div>
             </div>
           );
         })}
